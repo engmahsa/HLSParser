@@ -52,3 +52,5 @@ if let url = URL(string: "https://d2zihajmogu5jn.cloudfront.net/sintel/master.m3
 HLSParser, parse the main link which given to player, and it returns an array of metadata via delegation which parsed from stream tags. The array includes different resolutions that streaming supports for a specific link, And some sublinks. Player will automatically switch between the resolutions according users’ internet speed. But for manually change the links, you can use this metadata.  
 
 
+# To Do
+Add another tags to parser
