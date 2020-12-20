@@ -11,7 +11,29 @@
 		191E057D25886B3D0030D0A5 /* HLSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E057C25886B3D0030D0A5 /* HLSParser.swift */; };
 		191E0588258870CC0030D0A5 /* SampleLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E0587258870CC0030D0A5 /* SampleLink.swift */; };
 		191E058B2588722C0030D0A5 /* SampleLink.json in Resources */ = {isa = PBXBuildFile; fileRef = 191E058A2588722C0030D0A5 /* SampleLink.json */; };
+		CD1493D4258F3D9D0001330F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1493D3258F3D9D0001330F /* AppDelegate.swift */; };
+		CD1493D6258F3D9D0001330F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1493D5258F3D9D0001330F /* SceneDelegate.swift */; };
+		CD1493D8258F3D9D0001330F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1493D7258F3D9D0001330F /* ViewController.swift */; };
+		CD1493DB258F3D9D0001330F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1493D9258F3D9D0001330F /* Main.storyboard */; };
+		CD1493DD258F3DA00001330F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1493DC258F3DA00001330F /* Assets.xcassets */; };
+		CD1493E0258F3DA00001330F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1493DE258F3DA00001330F /* LaunchScreen.storyboard */; };
+		CD14948C258F4C4E0001330F /* HLSParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD149458258F46C50001330F /* HLSParser.framework */; };
+		CD14948D258F4C4E0001330F /* HLSParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD149458258F46C50001330F /* HLSParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD14948E258F4C4E0001330F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD14948D258F4C4E0001330F /* HLSParser.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		191E0570258865830030D0A5 /* HLSParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HLSParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +42,15 @@
 		191E057C25886B3D0030D0A5 /* HLSParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLSParser.swift; sourceTree = "<group>"; };
 		191E0587258870CC0030D0A5 /* SampleLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLink.swift; sourceTree = "<group>"; };
 		191E058A2588722C0030D0A5 /* SampleLink.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleLink.json; sourceTree = "<group>"; };
+		CD1493D1258F3D9D0001330F /* HLSParser-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HLSParser-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1493D3258F3D9D0001330F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD1493D5258F3D9D0001330F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD1493D7258F3D9D0001330F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD1493DA258F3D9D0001330F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD1493DC258F3DA00001330F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD1493DF258F3DA00001330F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD1493E1258F3DA00001330F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD149458258F46C50001330F /* HLSParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HLSParser.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +61,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD1493CE258F3D9D0001330F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD14948C258F4C4E0001330F /* HLSParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				191E0572258865830030D0A5 /* HLSParser */,
+				CD1493D2258F3D9D0001330F /* HLSParser-Example */,
 				191E0571258865830030D0A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				191E0570258865830030D0A5 /* HLSParser.framework */,
+				CD1493D1258F3D9D0001330F /* HLSParser-Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +100,21 @@
 				191E0587258870CC0030D0A5 /* SampleLink.swift */,
 			);
 			path = HLSParser;
+			sourceTree = "<group>";
+		};
+		CD1493D2258F3D9D0001330F /* HLSParser-Example */ = {
+			isa = PBXGroup;
+			children = (
+				CD1493D3258F3D9D0001330F /* AppDelegate.swift */,
+				CD1493D5258F3D9D0001330F /* SceneDelegate.swift */,
+				CD1493D7258F3D9D0001330F /* ViewController.swift */,
+				CD1493D9258F3D9D0001330F /* Main.storyboard */,
+				CD1493DC258F3DA00001330F /* Assets.xcassets */,
+				CD1493DE258F3DA00001330F /* LaunchScreen.storyboard */,
+				CD1493E1258F3DA00001330F /* Info.plist */,
+				CD149458258F46C50001330F /* HLSParser.framework */,
+			);
+			path = "HLSParser-Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +139,7 @@
 				191E056C258865830030D0A5 /* Sources */,
 				191E056D258865830030D0A5 /* Frameworks */,
 				191E056E258865830030D0A5 /* Resources */,
+				CD1493E7258F3E130001330F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -93,17 +150,39 @@
 			productReference = 191E0570258865830030D0A5 /* HLSParser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		CD1493D0258F3D9D0001330F /* HLSParser-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1493E4258F3DA00001330F /* Build configuration list for PBXNativeTarget "HLSParser-Example" */;
+			buildPhases = (
+				CD1493CD258F3D9D0001330F /* Sources */,
+				CD1493CE258F3D9D0001330F /* Frameworks */,
+				CD1493CF258F3D9D0001330F /* Resources */,
+				CD14948E258F4C4E0001330F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HLSParser-Example";
+			productName = "HLSParser-Example";
+			productReference = CD1493D1258F3D9D0001330F /* HLSParser-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		191E0567258865830030D0A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					191E056F258865830030D0A5 = {
 						CreatedOnToolsVersion = 12.2;
 						LastSwiftMigration = 1220;
+					};
+					CD1493D0258F3D9D0001330F = {
+						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
 			};
@@ -121,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				191E056F258865830030D0A5 /* HLSParser */,
+				CD1493D0258F3D9D0001330F /* HLSParser-Example */,
 			);
 		};
 /* End PBXProject section */
@@ -134,7 +214,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD1493CF258F3D9D0001330F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1493E0258F3DA00001330F /* LaunchScreen.storyboard in Resources */,
+				CD1493DD258F3DA00001330F /* Assets.xcassets in Resources */,
+				CD1493DB258F3D9D0001330F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD1493E7258F3E130001330F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\nPROJECT_DIR=\"${PROJECT_DIR}\"\necho $FRAMEWORK_LOCN\necho $PROJECT_DIR\n\n\ncp -f -R $FRAMEWORK_LOCN $PROJECT_DIR\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		191E056C258865830030D0A5 /* Sources */ = {
@@ -146,7 +256,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD1493CD258F3D9D0001330F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1493D8258F3D9D0001330F /* ViewController.swift in Sources */,
+				CD1493D4258F3D9D0001330F /* AppDelegate.swift in Sources */,
+				CD1493D6258F3D9D0001330F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD1493D9258F3D9D0001330F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD1493DA258F3D9D0001330F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD1493DE258F3DA00001330F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD1493DF258F3DA00001330F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		191E0576258865830030D0A5 /* Debug */ = {
@@ -282,6 +421,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HLSParser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +447,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HLSParser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +456,54 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HLSParser;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD1493E2258F3DA00001330F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 887FRY5FJ3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "HLSParser-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leoio.HLSParser-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD1493E3258F3DA00001330F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 887FRY5FJ3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "HLSParser-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leoio.HLSParser-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,6 +526,15 @@
 			buildConfigurations = (
 				191E0579258865830030D0A5 /* Debug */,
 				191E057A258865830030D0A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD1493E4258F3DA00001330F /* Build configuration list for PBXNativeTarget "HLSParser-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1493E2258F3DA00001330F /* Debug */,
+				CD1493E3258F3DA00001330F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
