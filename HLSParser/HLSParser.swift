@@ -9,37 +9,26 @@ import Foundation
 
 // let InputLink = https://d2zihajmogu5jn.cloudfront.net/sintel/master.m3u8
 
-protocol HLSParserDelegate {
-    func linkArrayReceived(result: [Any])
-}
-
-struct HLSParser {
+public struct HLSParser {
     
-    var hLSParserDelegate: HLSParserDelegate?
+    public typealias success = (_ parsedResponse:[Any], _ data:Data?) -> Void
+    public typealias failed = (_ error:Error?) -> Void
     
-    func getBaseURL(inputLink: String) -> String {
+    public init() {}
         
-        
-        if (inputLink.contains("master")) {
-            let range = inputLink.range(of:"master")
-            let substring = inputLink[..<range!.lowerBound]
-            
-            return String(substring)
-        }
-        
-        return ""
-    }
-    
-    func parseStreamTags(link: String) {
+    public func parseStreamTags(link: String,successBlock: @escaping success, failedBlock:@escaping failed) {
         var request = URLRequest(url: URL(string: link)!)
         request.httpMethod = "Get"
         var resultArr = [Any]()
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            
+            // Check if an error occured
+            
             guard let data = data, error == nil else {                                                 // check for fundamental networking error
                 print("error=\(String(describing: error))")
+                failedBlock(error) // return data & close
                 return
             }
-            
             if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
                 print("statusCode should be 200, but is \(httpStatus.statusCode)")
                 print("response = \(String(describing: response))")
@@ -70,12 +59,12 @@ struct HLSParser {
                         parsedDic["RESOLUTION"] = arrayofCom[ind].dropFirst(11)
                     }
                 }
-                
                 resultArr.append(parsedDic)
-                
             }
-            self.hLSParserDelegate?.linkArrayReceived(result: resultArr)
+            successBlock(resultArr,data)
+            
         }
+        
         task.resume()
     }
 }

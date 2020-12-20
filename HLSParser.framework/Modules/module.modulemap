@@ -1,0 +1,11 @@
+framework module HLSParser {
+  umbrella header "HLSParser.h"
+
+  export *
+  module * { export * }
+}
+
+module HLSParser.Swift {
+    header "HLSParser-Swift.h"
+    requires objc
+}
